@@ -1,7 +1,6 @@
 <template>
   <div>
     <ctAddForm :_formDef="formDef" _regexForFieldSubset="subjective"></ctAddForm>
-
     <el-tabs v-model="activeHorizontalTab" tab-position="left">
       <el-tab-pane label="Gateway mood symptoms" name="gateway_mood_symptoms"
         >Gateway mood symptoms. In the past 10 days, how many days have you:
@@ -35,8 +34,6 @@
 
 <script>
 import ctAddForm from '@/components//papers/change-appt-note/templates/add-form.vue'
-import psychReviewOfSystemsOfAPatientTbl from '@/components/patient-data/psych-review-of-system/db/client-side/structure/psych-review-of-system-of-a-patient-table.js'
-
 import { psychReviewOfSystemFormDef } from '@/components/patient-data/psych-review-of-system/db/client-side/structure/psych-review-of-system-of-a-patient-table.js'
 
 export default {

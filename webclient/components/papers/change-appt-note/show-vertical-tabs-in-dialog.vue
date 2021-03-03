@@ -84,7 +84,8 @@ So things like collapsible state will get destroyed. Even though the rem descrip
         problem1="This tab index is not getting applied to the child div inside el-tab-pane"
       >
         <span slot="label"> Sub Psych ROS (<u>H</u>PI) </span>
-        <prosAdd />
+         <routePros />
+        
       </el-tab-pane>
       <el-tab-pane label="Past psych history" name="past_psych_history">
         <span slot="label" tabindex="0"> <u>P</u>ast psych history </span>
@@ -261,7 +262,7 @@ So things like collapsible state will get destroyed. Even though the rem descrip
 import allPatientDataTbls from '@/components/non-temporal/form-manager/all-client-tables.js'
 
 import routeChiefComplaint from '@/components/patient-data/chief-complaint/change-layer/router.vue'
-import prosAdd from '@/components/patient-data/psych-review-of-system/change-layer/add-pros.vue'
+import routePros from '@/components/patient-data/psych-review-of-system/change-layer/router.vue'
 import routePastPsychHistory from '@/components/patient-data/past-psych-history/change-layer/router.vue'
 
 import familyHistory from '@/components/patient-data/family-history/change-layer/family-history-add.vue'
@@ -337,7 +338,7 @@ export default {
   },
   components: {
     routeChiefComplaint,
-    prosAdd,
+    routePros,
     routePastPsychHistory,
     familyHistory,
     fhHorizontalEdit,
